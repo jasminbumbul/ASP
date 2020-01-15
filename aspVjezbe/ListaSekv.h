@@ -9,6 +9,13 @@ class ListaSekv:public Lista<T> {
 	T* niz = new T[max_size];
 	int brojac = 0;
 public:
+	int getBrojac() {
+		return brojac;
+	}
+	T get(int index)
+	{
+		return niz[index];
+	}
 	void dodajNaPocetak(T x) {
 		if (!jelPun())
 		{
@@ -57,7 +64,7 @@ public:
 	void print() {
 		if (!jelPrazan())
 		{
-			cout << ":::ISPIS NIZA:::" << endl;
+			//cout << ":::ISPIS NIZA:::" << endl;
 			for (size_t i = 0; i < brojac; i++)
 			{
 				cout << niz[i] << " ";

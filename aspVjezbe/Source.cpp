@@ -8,8 +8,11 @@
 #include "PrioritetniRed.h"
 #include "PrioritetniRedSekv.h"
 #include "PrioritetniRedPov.h"
+#include "PrioritetniRedHeap.h"
 #include "Tacka.h"
-using namespace std;
+#include "hesiranjeOtvorenoAdresiranje.h"
+#include "MatricaSusjedstva.h"
+using namespace std; 
 
 template <class T>
 void funkcijaStek(T obj) {
@@ -196,13 +199,14 @@ void main() {
 	int odabir = 0;
 	int broj = 0;
 	//ListaSekv obj;
-	ListaPov<int> obj;
+	//ListaPov<int> obj;
 	//StekPov<int>obj;
 	/*StekSekv<int>obj;
 	funkcijaStek(obj);*/
 
-	/*Red<int>* red1 = new RedPov<int>;
-	Red<int>* red2 = new RedSekv<int>;
+	/*
+	Red<int>* red1 = new RedPov<int>;*/
+	/*Red<int>* red2 = new RedSekv<int>;
 	funkcijaRed(red2);*/
 	/*red1->dodaj(10);
 	red1->dodaj(20);
@@ -214,7 +218,7 @@ void main() {
 	/*PrioritetniRed<int>* red = new PrioritetniRedPov<int>;
 	funkcijaPrioritetniRed(red);*/
 
-	PrioritetniRed<Tacka>* prs = new PrioritetniRedSekv<Tacka>;
+	/*PrioritetniRed<Tacka>* prs = new PrioritetniRedSekv<Tacka>;
 	Tacka tacka1(5, 5);
 	Tacka tacka2(8, 3);
 	Tacka tacka3(2, 9);
@@ -242,9 +246,35 @@ void main() {
 	catch (const std::exception & ex)
 	{
 		cout << ex.what() << endl;
+	}*/
+
+	/*PrioritetniRed<int>* prh = new PrioritetniRedHeap<int>;
+	funkcijaPrioritetniRed(prh);*/
+
+	/*hesiranjeOtvorenoAdresiranje hoa;
+	hoa.dodaj(10);
+	hoa.dodaj(20);
+	hoa.dodaj(30);
+	hoa.print();
+	hoa.ukloni(30);
+	hoa.ukloni(10);
+	hoa.ukloni(30);
+	hoa.print();*/
+
+	MatricaSusjedstva matrica(4);
+	matrica.ucitajMatricu("matricaTest.txt");
+	cout << "Izlazni stepen za vrh 0 je " << matrica.izlazniStepen(0) << endl;
+	cout << "Ulazni stepen za vrh 0 je " << matrica.ulazniStepen(0) << endl;
+
+	cout << "Izlazni susjedi za vrh 0 su: ";
+	matrica.susjediTo(0)->print();
+	cout << endl;
+
+	for (size_t i = 0; i < matrica.getVelicina(); i++)
+	{
+		cout << "vrh " << i << ": ";
+		matrica.susjediTo(i)->print();
 	}
-
-
 
 
 	

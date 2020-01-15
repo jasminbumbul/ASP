@@ -34,7 +34,7 @@ public:
 
 			if (pocetak==nullptr)
 			{
-				kraj == nullptr;
+				kraj = nullptr;
 			}
 
 			return tempInfo;

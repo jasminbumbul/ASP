@@ -10,8 +10,8 @@ public:
 	virtual T ukloniSaKraja() = 0;
 	virtual void sveUkloni() = 0;
 	virtual void print() = 0;
-	virtual T get(int index) = 0;
+	//virtual T get(int index) = 0;
 	virtual bool jelPun() = 0;
-	virtual bool jelPrazna() = 0;
-	virtual int getBrojac() = 0;
+	//virtual bool jelPrazna() = 0;
+	//virtual int getBrojac() = 0;
 };

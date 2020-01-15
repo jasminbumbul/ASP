@@ -127,10 +127,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cvor.h" />
+    <ClInclude Include="hesiranjeOtvorenoAdresiranje.h" />
+    <ClInclude Include="hesiranjeUlancavanje.h" />
+    <ClInclude Include="Ivica.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="ListaPov.h" />
     <ClInclude Include="ListaSekv.h" />
+    <ClInclude Include="MatricaSusjedstva.h" />
+    <ClInclude Include="matricaTest.txt" />
     <ClInclude Include="PrioritetniRed.h" />
+    <ClInclude Include="PrioritetniRedHeap.h" />
     <ClInclude Include="PrioritetniRedPov.h" />
     <ClInclude Include="Red.h" />
     <ClInclude Include="RedPov.h" />

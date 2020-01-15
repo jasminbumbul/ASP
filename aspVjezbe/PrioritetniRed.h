@@ -8,5 +8,4 @@ public:
 	virtual bool jel_prazna() = 0;
 	virtual bool jel_pun() = 0;
 	virtual void print() = 0;
-	virtual int get_brojac() = 0;
 };

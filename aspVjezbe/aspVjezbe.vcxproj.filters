@@ -62,5 +62,23 @@
     <ClInclude Include="Tacka.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PrioritetniRedHeap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hesiranjeOtvorenoAdresiranje.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hesiranjeUlancavanje.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatricaSusjedstva.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ivica.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="matricaTest.txt">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
