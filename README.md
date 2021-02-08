@@ -1,2 +1,2 @@
 # ASP
-Algoritmi i strukture podataka(kompletan kod prvog sememstra)
+This code is a part of the Algorithms and data structures course on my college.
